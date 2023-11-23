@@ -8,8 +8,8 @@ const period = document.querySelector("#period");
 
 const months = ["January", "Feburary","March","April","May","June","July","Augest","September","Octobar","November","December"]
 const week = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
-const current_date = new Date();
 function updateClock(){
+    const current_date = new Date();
     year.innerHTML = current_date.getFullYear();
     day.innerHTML = current_date.getDate() + " - " + week[current_date.getDay()];
     month.innerHTML = months[current_date.getMonth()];
