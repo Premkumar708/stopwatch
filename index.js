@@ -16,7 +16,7 @@ function updateClock(){
     seconds.innerHTML  = (current_date.getSeconds()< "9" ? "0"+ current_date.getSeconds():""+ current_date.getSeconds());
     minutes.innerHTML = (current_date.getMinutes() < "9" ? "0"+ current_date.getMinutes()+" :":"" + current_date.getMinutes()+" :");
     hour.innerHTML = (current_date.getHours()< "9" ? "0" + current_date.getHours()+" :" :"" + current_date.getHours()+ " :");
+    period.innerHTML = (current_date.getHours() < "12" ? "AM" : "PM" )
 }
-period.innerHTML = (current_date.getHours() < "12" ? "AM" : "PM" )
 setInterval(updateClock,1000);
 
