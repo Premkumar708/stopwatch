@@ -18,5 +18,5 @@ function updateClock(){
     hour.innerHTML = (current_date.getHours()< "9" ? "0" + current_date.getHours()+" :" :"" + current_date.getHours()+ " :");
 }
 period.innerHTML = (current_date.getHours() < "12" ? "AM" : "PM" )
-setInterval(updateClock,1);
+setInterval(updateClock,1000);
 
